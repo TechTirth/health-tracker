@@ -8,25 +8,23 @@ import { trigger, style, animate, transition } from '@angular/animations';
 Chart.register(...registerables);
 
 @Component({
-  selector: 'app-workout-chart',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+    selector: 'app-workout-chart',
+    imports: [CommonModule],
+    template: `
     <div class="chart-container" @fadeIn>
   <canvas #chartCanvas></canvas>
 </div>
 
   `,
-  animations: [
-    trigger('fadeIn', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(20px)' }),
-        animate('600ms ease', style({ opacity: 1, transform: 'translateY(0)' }))
-      ])
-    ])
-  ],
-  
-  styles: [`
+    animations: [
+        trigger('fadeIn', [
+            transition(':enter', [
+                style({ opacity: 0, transform: 'translateY(20px)' }),
+                animate('600ms ease', style({ opacity: 1, transform: 'translateY(0)' }))
+            ])
+        ])
+    ],
+    styles: [`
     .chart-container {
       background: white;
       padding: 20px;

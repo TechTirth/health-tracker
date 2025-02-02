@@ -3,10 +3,9 @@ import { WorkoutService } from '../workout.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-workout-list',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+    selector: 'app-workout-list',
+    imports: [CommonModule],
+    template: `
     <table class="table">
       <thead>
         <tr>

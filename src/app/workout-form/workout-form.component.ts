@@ -4,10 +4,9 @@ import { WorkoutService } from '../workout.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-workout-form',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  template: `
+    selector: 'app-workout-form',
+    imports: [CommonModule, ReactiveFormsModule],
+    template: `
     <form [formGroup]="workoutForm" (ngSubmit)="onSubmit()" class="form-container">
       <div class="form-group">
         <label for="userName">User Name*</label>
@@ -36,7 +35,7 @@ import { CommonModule } from '@angular/common';
 
     </form>
   `,
-  styles: [`
+    styles: [`
     .form-container {
       background: white;
       padding: 20px;

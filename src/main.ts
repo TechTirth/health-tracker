@@ -7,16 +7,15 @@ import { WorkoutListComponent } from './app/workout-list/workout-list.component'
 import { WorkoutChartComponent } from './app/workout-chart/workout-chart.component';  // Import the chart component
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    WorkoutFormComponent,
-    WorkoutListComponent,
-    WorkoutChartComponent    // Include the chart component here
-  ],
-  template: `
+    selector: 'app-root',
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        WorkoutFormComponent,
+        WorkoutListComponent,
+        WorkoutChartComponent // Include the chart component here
+    ],
+    template: `
     <div class="container">
       <h1>🏃‍♂️ Workout Tracker</h1>
       <app-workout-form></app-workout-form>
