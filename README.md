@@ -1,6 +1,7 @@
 # Workout Tracker
 
-Live Deployment: [Insert GitHub Pages link here]
+Live Deployment: [Deployed URL!!](https://health-tracker-seven-mu.vercel.app/)
+
 
 A simple Angular application for tracking workout activities. Users can log their workouts with details like name, type of workout, and duration.
 
